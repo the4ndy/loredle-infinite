@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lore-dle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lore-dle</h1>
+    <div id="win-message"></div>
+    <div id="input-container">
+        <div id="image-container">
+            <img id="hovered-image" src="" alt="Card Image">
+            <img id="loading-image" src="https://lorcanahq.com/wp-content/uploads/2022/09/Official-Lorcana-Logo.png" class="loading-spinner" alt="Loading..." role="status">
+        </div>
+        <div>
+            <input type="text" id="card-input" placeholder="Start typing a card name..." disabled>
+            <ul id="suggestions"></ul>
+        </div>
+    </div>
+
+    <div id="game-board">
+        <div class="header">
+            <div class="cell">Name</div>
+            <div class="cell">Set</div>
+            <div class="cell">Cost</div>
+            <div class="cell">Inkable</div>
+            <div class="cell">Color</div>
+            <div class="cell">Type</div>
+            <div class="cell">Rarity</div>
+        </div>
+        <div id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
